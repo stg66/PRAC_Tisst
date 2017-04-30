@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color="gold">
+    <ion-title>PRAC_Tisst - Songs</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      {{ groupSelected.name }} Index: {{ index }}
+    </ion-list-header>
+    <button ion-item *ngFor="let song of groupSelected.songLesson" (click)="songSelected(song.name)">
+      {{ song.name }}
+    </button>
+  </ion-list>
+</ion-content>

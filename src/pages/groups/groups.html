@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar color="gold">
+    <ion-title>PRAC_Tisst - Groups</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let group of StoredDataService.groupsSongLessons; let i = index;" (click)="groupSelected(group, i)">
+      {{ group.name }} index: {{ i }}
+    </button>
+  </ion-list>
+</ion-content>
