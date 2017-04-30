@@ -22,12 +22,9 @@ export class Songs {
   ionViewDidLoad() {}
 
   songSelected(song) {
-    console.log('song: ' + song);
-    console.log(this.callbackHome(song));
-    
-//    this.callbackHome(song).then(()=>{
-//      this.navCtrl.popToRoot();
-//    });
+    this.callbackHome(song).then(()=>{
+      this.navCtrl.popToRoot();
+    });
   }
 
 }
